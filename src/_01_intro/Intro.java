@@ -1,6 +1,6 @@
-package day01;
+package _01_intro;
 
-public class Main { // 궁극적으로 자바를 실행시키는 코드
+public class Intro { // 궁극적으로 자바를 실행시키는 코드
     public static void main(String[] args) {
         System.out.println("hello");
         System.out.println("world");
