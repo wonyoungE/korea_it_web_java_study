@@ -52,5 +52,7 @@ public class DataTypes {
 
         System.out.println("제 이름은 " + name + "입니다. 제 나이는 " + age + "살이고\n취미는 " + hobby + "입니다.");
         System.out.println("제 MBTI는 " + mbti + "입니다.");
+
+
     }
 }
