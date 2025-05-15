@@ -21,7 +21,7 @@ public class DataTypes {
 
 
         // 실수 - float, double (double이 float보다 소수점 자리수 더 많이 표현 가능)
-        float f = 3.14f;
+        float f = 3.14F;
         double d = 3.1415921234;
         // 부동소수점의 오류
 
