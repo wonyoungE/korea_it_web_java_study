@@ -25,8 +25,9 @@ public class TypeCasting {
         System.out.println(sum2);   // 153
 
         // double -> float -> long -> int (수동 형변환)
-        // 오른쪽으로 갈수록 더 자세한 숫자 표현 가능
-        // 그렇기 때문에 오른쪽에 있는 자료형을 왼쪽에 있는 자료형으로 변환할 경우 일부분 생략된다.
+        // 왼쪽으로 갈수록 더 자세한 숫자 표현 가능
+        // 그렇기 때문에 왼쪽에 있는 자료형을 오른쪽에 있는 자료형으로 변환할 경우 일부분 생략된다.
+        // 생략되기 때문에 수동으로 형변환 해줘야함
         int convertedScoreInt = (int)scoreDouble;
         System.out.println(convertedScoreInt);
 
@@ -64,7 +65,5 @@ public class TypeCasting {
         System.out.println(d);
 
 //      i = Integer.parseInt("숫자"); 불가능
-
-
     }
 }
