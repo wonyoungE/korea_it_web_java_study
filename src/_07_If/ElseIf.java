@@ -32,5 +32,7 @@ public class ElseIf {
         } else {
             System.out.println("미성년자 입니다.");
         }
+
+
     }
 }
