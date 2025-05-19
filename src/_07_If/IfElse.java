@@ -12,7 +12,5 @@ public class IfElse {
             System.out.println("탑승 불가능");
         }
         System.out.println(height >= 120 ? "탑승 가능" : "탑승 불가능");
-
-
     }
 }
