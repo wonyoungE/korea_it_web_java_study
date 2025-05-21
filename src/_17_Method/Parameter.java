@@ -22,5 +22,20 @@ public class Parameter {
         int num = 4;
         power(num);
         powerByExp(2, 4);
+        getAvg(80, 90, 100);
+        isEven(2);
+    }
+
+    // 세 개의 정수를 전달하여서 평균을 출력하는 메서드
+    public static void getAvg(int a, int b, int c) {
+        double result = (a + b + c) / 3;
+        System.out.println(result);
+    }
+
+    // 정수를 전달하여 짝수인지 홀수인지 판별하는 메서드
+    // 단, 삼항연산자를 쓸 것
+    public static void isEven(int a) {
+        String result = a % 2 == 0 ? "짝수" : "홀수";
+        System.out.println(a + "는 " + result + "입니다.");
     }
 }
