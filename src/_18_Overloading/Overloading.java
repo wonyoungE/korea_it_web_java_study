@@ -64,12 +64,12 @@ public class Overloading {
     }
 
     public static void add(int a, int b) {
-        System.out.println(a + b);
+        System.out.println(a + " + " + b + " = " + (a+b));
     }
     public static void add(double a, double b) {
-        System.out.println(a + b);
+        System.out.println(a + " + " + b + " = " + (a+b));
     }
     public static void add(String a, String b) {
-        System.out.println(Integer.parseInt(a) + Integer.parseInt(b));
+        System.out.println(a + " + " + b + " = " + (Integer.parseInt(a) + Integer.parseInt(b)));
     }
 }
