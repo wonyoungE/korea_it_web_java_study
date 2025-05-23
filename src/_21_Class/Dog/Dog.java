@@ -2,6 +2,7 @@ package _21_Class.Dog;
 
 public class Dog {
     // 클래스의 필드 => 속성
+    // 필드 === 속성 === 멤버변수
     String name;
     int age;
 

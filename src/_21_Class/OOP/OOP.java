@@ -1,5 +1,7 @@
 package _21_Class.OOP;
 
+import _21_Class.Person.Person;
+
 public class OOP {
     public static void main(String[] args) {
         // OOP : Object Oriented Programming
@@ -15,15 +17,14 @@ public class OOP {
         //    - 객체에 있는 메서드를 호출해서 사용하는 것 (메서드가 어떻게 돌아가는지 몰라도 호출만 하면 사용 가능)
         //    - ex) car.drive()
         // 2) 캡슐화
-        //    - 정보 은닉
+        //    - 데이터(변수)를 보호하고, 접근을 제한하여 안정성을 높히는 것(정보 은닉)
         // 3) 상속
         // 4) 다형성
 
-        // 접근 제어자 - 정보 은닉
-        // OOP에서는 private를 많이 씀
-        // public       - 어디서든 접근 가능
-        // default      - 같은 패키지 내에서만 접근 가능 (명시를 따로 하지 않으면 default)
-        // protected    - 같은 패키지 또는 자식 클래스에서만 접근 가능
-        // private      - 해당 클래스 내부에서만 접근 가능
+        Person person = new Person();
+        System.out.println(person.name);    // name -> public, 접근 가능. 다른 패키지임에도 접근 가능
+//      System.out.println(person.age);     // age -> protected, 접근 불가. 같은 패키지 또는 자식 클래스에서만 접근 가능
+//      System.out.println(person.address);     // address -> default, 접근 불가. 같은 패키지 내에서만 접근 가능
+
     }
 }
