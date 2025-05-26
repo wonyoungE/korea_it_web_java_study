@@ -5,7 +5,7 @@ package _22_Inheritance;
 // super 키워드의 두가지 사용 방식
 //  - 1. super() : 부모 클래스의 생성자를 호출하는 키워드 / 기본 생성자라면 () <- 아무 값 없음
 //                  매개변수 생성자라면 () <- 매개변수 포함
-//  - 2.
+//  - 2. super.메서드() 또는 super.필드명(멤버변수) : 부모클래스의 메서드 또는 멤버변수에 접근
 
 public class Tiger extends Animal {
     // Animal에게 상속받아 Animal이 가지고 있는 속성과 메서드를 그대로 받음
@@ -29,5 +29,22 @@ public class Tiger extends Animal {
 
     public void setStriped(boolean striped) {
         isStriped = striped;
+    }
+
+    // 상속 관계에서 자식 클래스가 부모 클래스의 메서드를 재정의
+    // 부모로부터 물려받은 메서드를 자식이 '다르게' 실행하도록 바꾸는 것
+    // 부모 클래스의 메서드를 자식 클래스에서 동일한 이름, 매개변수, 리턴 타입으로 재정의
+    @Override
+    public void move() {
+        super.move();
+        System.out.println(getAnimalName() + "가 움직입니다.");
+    }
+
+    public void hunt() {
+        // super. 안써도 댐..
+        // 동적 바인딩
+        // 상속과 메서드에서는 탐색 순서가 있음
+        // 자식 클래스에서 해당 메서드가 없다면 부모 클래스에서 찾는다.
+        System.out.println(getAnimalName() + "가 사냥을 합니다.");
     }
 }

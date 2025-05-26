@@ -21,8 +21,23 @@ public class Main {
         animal1.setAnimalName("고양이");
         animal1.setAnimalAge(3);
         animal1.move();
+        // animal1.hunt(); 자식 클래스에 있는 메서드이기 때문에 불가능
 
         // super()까지 함
         Tiger tiger1 = new Tiger();
+        tiger1.setAnimalName("호랑이");
+        System.out.println(tiger1.getAnimalName());
+        tiger1.setAnimalAge(3);
+        System.out.println(tiger1.getAnimalAge());
+        tiger1.move();
+        tiger1.hunt();
+        tiger1.setStriped(true);
+
+        Tiger tiger2 = new Tiger("백호", 3, false);
+
+        Human human = new Human("원영", 26);
+        System.out.println(human.getAnimalName());
+        human.getAnimalAge();
+        human.read("책 제목1");
     }
 }
