@@ -7,6 +7,8 @@ public class Counter {
         count++;
     }
 
+    // static -> 클래스 수준의 메서드, static 메모리에 할당.
+    // 여기서 쓰는 메서드, 변수는 static이어야 함.
     public static void main(String[] args) {
         // 같은 객체 내에 있기 때문에 Counter. 안붙여도 됨
         increase();

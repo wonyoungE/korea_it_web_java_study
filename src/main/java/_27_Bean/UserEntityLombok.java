@@ -21,7 +21,7 @@ public class UserEntityLombok {
     private String userName;
     private int age;
     private String email;
-}   // 궁금한거.. 그러면 maven? lombok? 쓰면 클래스에 기본 생성자는 안생기는거?
+}
 // Entity
 // 데이터베이스의 테이블과 1:1 매핑되는 클래스
 // 자바 객체 <=> DB 테이블 간 데이터를 매핑하기 위해 사용
