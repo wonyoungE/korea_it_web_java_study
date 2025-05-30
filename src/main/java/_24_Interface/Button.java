@@ -5,7 +5,7 @@ package _24_Interface;
 public abstract class Button implements Press, Up, Down{
 
     // 추상 메서드가 하나라도 있으면 그 클래스는 추상 메서드
-    // 모든 버튼 클래스에서 무조건 재정의 해줄 메서드
+    // 모든 버튼 클래스에서 무조건 재정의 해줄 메서드 => 버튼마다 오버라이드 해주라고 abstract 붙여줌
     @Override     // @ : 어노테이션, @ 뒤 : 시그니처
     public abstract void onPressed();
 
