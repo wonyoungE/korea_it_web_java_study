@@ -68,10 +68,11 @@ public class StrMap {
         System.out.println(entrySet2.size());   // 5, 키.밸류 한 쌍을 하나의 element로 봄
         System.out.println(entrySet2);
 
-        // Map => List (set 거쳐서)
+        // Map => List(Set 거쳐서), Map은 Collection이 아니라 바로 List로 못감. Map에는 entrySet 있으니 거쳐서 가면 된다
+        // List <-> Set은 자유자재
         List<Map.Entry<String, String>> entryList1 = new ArrayList<>();
         // map -> 컬렉션 아님
-        // set, list -> 컬렉션임, addAll로 서로 요소 넣었다 뺐다 할 수 있음
+        // set, list -> 컬렉션임, addAll로 서로 요소 한 번에 넣었다 뺐다 할 수 있음
         entryList1.addAll(entrySet2);
         // Map은 Collection이 아니기 때문에 Set을 거쳐서 넣는다.
         System.out.println(entryList1);
@@ -79,7 +80,8 @@ public class StrMap {
         // Map 정렬 => 사실은 불가능
         // Map은 빠른 탐색 및 검색을 위해서 만들어진(설계된) 형태
         // 정렬은 고려하지 않고 만듦 => 그래서 순서를 보장하지 않음
-        // 그럼에도 정렬을 하고 싶다면?
+        // 그럼에도 정렬을 하고 싶다면? List로 만들어서 정렬
+        // Map 정렬하기 -> Map -> Set -> List -> 정렬
         Collections.sort(entryList1, Map.Entry.comparingByValue()); // 값 기준 정렬
         System.out.println("값 기준 정렬 : " + entryList1);
         Collections.sort(entryList1, Map.Entry.comparingByKey()); // 키 기준 정렬
