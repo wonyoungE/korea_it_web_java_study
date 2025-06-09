@@ -1,4 +1,4 @@
-package Json;
+package _33_Json;
 
 // Json(Javascript Object Notation)
 // 본래 자바스크립트 언어로부터 파생되어 자바스크립트 구문을 따르지만, 언어 독립형 데이터 포맷
@@ -9,10 +9,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
 // Gson
-// Google Json의 약자로 Java 객체를 Json 형태로 변환하거나 혹은 반대로 변환하는 데에 사용
-// 주요 클래스
-// Gson - 변환을 위해(Java 객체 <-> Json) 주로 사용되는 클래스
-// GsonBuilder -> Gson 인스턴스에 대한 사용자 정의 구성 허용(prettyPrinting) 등
+//// Google Json의 약자로 Java 객체를 Json 형태로 변환하거나 혹은 반대로 변환하는 데에 사용
+//// 주요 클래스
+//// Gson - 변환을 위해(Java 객체 <-> Json) 주로 사용되는 클래스
+//// GsonBuilder -> Gson 인스턴스에 대한 사용자 정의 구성 허용(prettyPrinting) 등
 // JsonObject -> Json의 객체를 나타냄
 public class Json01 {
     public static void main(String[] args) {

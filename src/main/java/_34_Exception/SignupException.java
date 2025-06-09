@@ -13,9 +13,10 @@ public class SignupException {
     public static void signup(String name, int age) throws SignupFailedException {
         if(age < 14) {
             throw new SignupFailedException("14세 미만 가입 불가");
-        } else {
-            System.out.println("회원 가입 성공! 이름: " + name + " 나이: " + age);
         }
+
+        System.out.println(name + "님, 회원가입 완료되었습니다.");
+
     }
 
     public static void main(String[] args) {

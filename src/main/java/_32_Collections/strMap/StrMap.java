@@ -70,7 +70,7 @@ public class StrMap {
 
         // Map => List(Set 거쳐서), Map은 Collection이 아니라 바로 List로 못감. Map에는 entrySet 있으니 거쳐서 가면 된다
         // List <-> Set은 자유자재
-        List<Map.Entry<String, String>> entryList1 = new ArrayList<>();
+        List<Map.Entry<String, String>> entryList1 = new ArrayList<>(entrySet2);
         // map -> 컬렉션 아님
         // set, list -> 컬렉션임, addAll로 서로 요소 한 번에 넣었다 뺐다 할 수 있음
         entryList1.addAll(entrySet2);
